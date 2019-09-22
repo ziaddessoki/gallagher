@@ -31,7 +31,7 @@ body{
 
 .bar li{
     display: inline;
-    text-align: center;
+    padding-left: 40px;
     
 }
 
@@ -39,7 +39,7 @@ body{
     color:#777777;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px;
+    padding-right: 15px;
    
     }
 
@@ -59,7 +59,7 @@ body{
 
 }   
 
-.content{
+.my-form{
     clear: both;
     overflow: auto;
     padding: 70px 60px;
@@ -68,26 +68,51 @@ body{
     
 }
 
-.content h{
+.my-form h{
     font-size: 40px;
     font-weight:bold;
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-.content img{
-    border-radius: 8px;
-    float: left;
-    margin:10px 20px;
+
+.form-group{
+    padding:10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    display: block;
+    border-radius: 10px;
+    margin: 10px 10px
 }
 
-.content p{
-    font-size: 18px;
-    margin:  20px 20px;
+
+.button{
+    padding:10px 30px;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: auto;
-    text-align: justify;
+    font: bold;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin: 20px 20px;
+    border-radius: 10px;
 }
+
+.button :hover{
+    background-color: bisque;
+    color: red;
+}
+
+.button :focus{
+    background-color: bisque;
+    color: red; 
+
+}
+
+.button :focus{
+    background-color: bisque;
+    color: red;
+
+}
+
 
 footer{
     width: 960px;
@@ -96,6 +121,6 @@ footer{
     text-align: center;
     height: 100px;
     width: 100%;
-    margin:0px;
+    bottom:0px;
     padding-top: 10px;
 }
