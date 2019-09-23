@@ -8,11 +8,11 @@ body{
 #nav{
     background-color: #ffffff;
     border-bottom:  solid 0.2px grey;
-    padding-left: 10px;
-    padding-right: 80px;
+    /* padding-left: 10px;
+    padding-right: 80px; */
     width: 100%;
-    height: 100px;
-    margin:0px;
+    height: 80px;
+    /* margin:0px; */
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
@@ -23,7 +23,7 @@ body{
     list-style: none;
     position: absolute;
     padding-left: 300px;
-    padding-top: 40px;
+    padding-top: 35px;
     width: 100%;
     
 }
@@ -32,16 +32,22 @@ body{
 .bar li{
     display: inline;
     text-align: center;
-    
+    padding: 10px;
 }
 
 .bar a{
     color:#777777;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px;
+    
    
     }
+
+.bar li a:hover {
+        background-color: #4aaaa5;
+        color: white
+    
+    }    
 
 #nav header{
     color:white;
@@ -50,12 +56,14 @@ body{
     text-align: center;
     background-color: #4aaaa5;
     width: 200px;
-    height: 70px;
+    height: 80px;
     float: left;
-    padding-top:  30px;
+    padding-top:  10px;
     margin-left:50px;
     top: 0px;
     position: absolute;
+    line-height: 100%;
+
 
 }   
 
@@ -81,19 +89,106 @@ body{
     
 }
 
-.family{
-    margin: center;
+/* .family{
+    margin:30px 150px 150px 30px;
+} */
+
+.family label{
+    background-color: #4aaaa5;
+    padding: 5px 40px;
+    margin-top: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
 }
 
+
+.family label:hover{
+    transform: scale(1.5)
+}
 .fiona{
     background-image: url(../image/fiona.jpg);
-    background-size: contain;
+    background-size: 150px 150px;
+    
     text-align: center;
     border-radius: 8px;
     width: 150px;
     height: 150px;
     color: white;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    
+}
 
+
+
+
+
+
+.lip{
+    background-image: url(../image/lip.jpg);
+    background-size: 150px 150px;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    
+}
+
+.ian{
+    background-image: url(../image/ian.jpg);
+    background-size: 150px 150px;
+    
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+
+.carl{
+    background-image: url(../image/carl.jpg);
+    background-size: 150px 150px;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    
+}
+
+.liam{
+    background-image: url(../image/liam.jpg);
+    background-size: 150px 150px;
+    
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    
+}
+
+
+.debbie{
+    background-image: url(../image/Debbie.jpg);
+    background-size: 150px 150px;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    
 }
 
 
@@ -106,14 +201,67 @@ body{
     text-align: justify; */
 
 
-footer{
-    width: 960px;
+.footer{
+    clear: both;
+    width: 100%;
     background-color:rgba(42, 55, 71, 0.808);
     border-top: 5px solid #f3f722;
     text-align: center;
     height: 100px;
-    width: 100%;
     margin:0px;
     padding-top: 10px;
-    overflow: hidden;
-}
+    }
+
+
+    @media screen and (max-width: 768px){
+        #nav{
+        width:100%;
+    }
+
+    .bar ul{
+        padding-left: 60px;
+        padding-top: 15px;
+        line-height: 100%;
+
+
+        
+    }
+
+    .bar li{
+        
+        text-align: center;
+        padding: 1px;
+        display: list-item;
+        margin: 0px;
+        
+    }
+        .content{
+            margin-left: 30px;
+            margin-right:30px;
+            height: 100%;
+        }
+    
+        footer{
+            width:100%;
+        }
+    
+        
+    }
+    
+    @media screen and (max-width: 640px){
+        #nav{
+            width:100%;
+        }
+        .content{
+            margin-left: 10px;
+            margin-right:10px;
+            height: 60%;
+        }
+    
+        footer{
+            width:100%;
+        }
+    
+    
+    }
+    
