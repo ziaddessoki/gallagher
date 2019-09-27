@@ -13,7 +13,7 @@ body{
     width: 100%;
     height: 80px;
     /* margin:0px; */
-    position: relative;
+    /* position: relative; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
@@ -21,10 +21,12 @@ body{
 .bar ul{
     padding:10px;
     list-style: none;
-    position: absolute;
-    padding-left: 300px;
-    padding-top: 40px;
-    width: 100%;
+    margin: 20px 70px;
+    /* position: absolute; */
+    /* padding-left: 300px; */
+    /* padding-top: 40px; */
+    /* width: 100%; */
+    float: right;
     
 }
 
@@ -32,12 +34,17 @@ body{
 .bar li{
     display: inline;
     text-align: center;
-    padding: 10px;
+    padding: 10px auto;
+    
+    
+    
+    
 }
 
 .bar li a:hover {
+    transform: scale(2);
     background-color: #4aaaa5;
-    color: white
+    color: white;
 
 }
 
@@ -45,9 +52,8 @@ body{
      color:#777777;
     text-decoration: none;
     font-size: 18px;
-    /* padding: 10px; */
-   
-    }
+    padding: 10px 5px;
+}
 
 #nav header{
     color:white;
@@ -56,12 +62,13 @@ body{
     text-align: center;
     background-color: #4aaaa5;
     width: 200px;
-    height: 70px;
+    height: 80px;
     float: left;
     padding-top:  10px;
     margin-left:50px;
     top: 0px;
-    position: absolute;
+    /* position: absolute; */
+    line-height: 100%;
 
 }   
 
@@ -87,13 +94,32 @@ body{
     margin:10px 20px;
 }
 
-.content p{
-    font-size: 16px;
+.content p1, p2, p3{
+    font-size: 14px;
     font-weight: 0;
-    margin:  20px 20px;
     font-family: Arial, Helvetica, sans-serif;
     overflow: auto;
+    line-height: 100%;
+}
+
+.content p1{
+    margin:  20px 20px;
     text-align: justify;
+    width:100%
+}
+
+.content p2{
+    
+    margin:  20px 20px;
+    text-align: justify;
+    
+}
+
+
+.content p3{
+    
+    margin:  20px 20px;
+    
 }
 
 footer{
@@ -109,8 +135,17 @@ footer{
 
 
 @media screen and (max-width: 768px){
-    #nav{
-        width:100%;
+    
+    #nav{position: relative;
+    }
+
+    .bar ul{
+        padding:10px;
+        list-style: none;
+        margin-left: 270px;
+        float: left;
+        position: absolute;
+        
     }
     .content{
         margin-left: 30px;
@@ -126,25 +161,16 @@ footer{
 }
 
 @media screen and (max-width: 640px){
-    #nav{
-        width:100%;
+    #nav{position: relative;
     }
 
     .bar ul{
-        padding-left: 60px;
-        padding-top: 10px;
-
-
+        padding:10px;
+        list-style: none;
+        margin-left: 270px;
+        float: left;
+        position: absolute;
         
-    }
-
-    .bar li{
-        
-        text-align: center;
-        padding: 1px;
-        display: list-item;
-        
-    }
     .content{
         margin-left: 10px;
         margin-right:10px;
